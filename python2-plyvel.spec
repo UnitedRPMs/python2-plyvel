@@ -47,6 +47,11 @@ PYTHONPATH=%{buildroot}%{python2_sitearch} py.test-2 -vv test/
 %{python2_sitearch}/%{module_name}*.egg-info
 
 %changelog
+
+* Mon Feb 18 2019 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1.0.5-7
+- Updated to 1.0.5-7
+- Upstream
+
 * Thu Aug 16 2018 Dan Callaghan <dcallagh@redhat.com> - 1.0.4-5
 - Fixed Cython build (patch from Miro Hrončok <miro@hroncok.cz>)
 
