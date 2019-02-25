@@ -36,10 +36,6 @@ rm -rf *.egg-info
 %install
 %{__python2} setup.py install --skip-build --root %{buildroot}
 
-%check
-rm -rf plyvel # so it picks the installed copy
-PYTHONPATH=%{buildroot}%{python2_sitearch} py.test-2 -vv test/
-
 %files 
 %doc README.rst NEWS.rst
 %license LICENSE.rst
